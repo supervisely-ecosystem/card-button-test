@@ -8,11 +8,12 @@ import src.ui.handlers
 import src.ui.card1 as c1
 import src.ui.card2 as c2
 import src.ui.card3 as c3
+import src.ui.card4 as c4
 
 # import src.ui.settings as settings
 # import src.ui.output as output
 
-layout = Container(widgets=[dataset.card, c1.card1, c2.card2, c3.card3])
+layout = Container(widgets=[dataset.card, c1.card1, c2.card2, c3.card3, c4.card4])
 
 # * If the app uses static dir, it should be passed as a parameter.
 # * If not needed the app can be initialized without static_dir parameter.

@@ -32,7 +32,12 @@ class State:
         self.selected_team = sly.io.env.team_id()
         self.selected_workspace = sly.io.env.workspace_id()
         self.selected_project = sly.io.env.project_id(raise_not_found=False)
+        if self.selected_project is None:
+            self.selected_project = 23764
+
         self.selected_dataset = sly.io.env.dataset_id(raise_not_found=False)
+        if self.selected_dataset is None:
+            self.selected_dataset = 68992
 
         self.continue_working = True
 
