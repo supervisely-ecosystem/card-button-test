@@ -20,7 +20,9 @@
             "justMyCode": true,
             "env": {
                 "PYTHONPATH": "${workspaceFolder}:${PYTHONPATH}",
-                "LOG_LEVEL": "DEBUG"
+                "LOG_LEVEL": "DEBUG",
+                "DEBUG_WITH_SLY_NET": "1",
+                "SLY_APP_DATA_DIR": "${workspaceFolder}/app_data"
             }
         }
     ]
