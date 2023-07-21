@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "name": "Test app for debug UI",
   "description": "Test app for debug UI on dev instance",
-  "docker_image": "supervisely/base-py-sdk:6.72.78",
+  "docker_image": "supervisely/base-py-sdk:6.72.68",
+  "instance_version": "6.6.7",
   "categories": [
     "images",
     "labeling",
