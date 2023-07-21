@@ -17,4 +17,4 @@ layout = Container(widgets=[dataset.card, c1.card1, c2.card2, c3.card3])
 # * If the app uses static dir, it should be passed as a parameter.
 # * If not needed the app can be initialized without static_dir parameter.
 # * app = sly.Application(layout=layout)
-app = sly.Application(layout=layout, static_dir=g.STATIC_DIR)
+app = sly.Application(layout=layout)
