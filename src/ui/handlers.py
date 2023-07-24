@@ -24,6 +24,7 @@ from src.ui.card4 import button4, selector4, card4
 c3_id = card3.widget_id
 
 
+# bug cant be detected without this handler
 @selector3.value_changed
 def s3_change_value(new_value):
     sly.logger.info(f"Selector3 new value: {new_value}")
