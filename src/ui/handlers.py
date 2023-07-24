@@ -1,3 +1,5 @@
+from time import sleep
+
 import supervisely as sly
 from supervisely.app import StateJson
 
@@ -40,6 +42,9 @@ def b2_click():
     selector3.set_value("string2")  # trigger @selector3.value_changed
     button2.disable()
     selector2.disable()
+    # if you have too heavy code part in between set_value() and lock()
+    # and your PC is slow enough, you may not find the error
+    # sleep(5)  # heavy code mode
     card3.unlock()
 
     # comment upper code and uncomment code below to fix issue
