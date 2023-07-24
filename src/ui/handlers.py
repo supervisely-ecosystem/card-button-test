@@ -37,6 +37,11 @@ def b1_click():
 def b2_click():
     selector3.set_value("string2")  # trigger @selector3.value_changed
     button2_callback()  # unlock card3
+
+    # comment upper code and uncomment code below to fix issue
+    # button2_callback()  # unlock card3
+    # selector3.set_value("string2")  # trigger @selector3.value_changed
+
     sly.logger.info(f"Card3 State in BUTTON2 handler: {StateJson()[c3_id]}")
 
 
